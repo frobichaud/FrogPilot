@@ -18,7 +18,7 @@ class CAR(Platforms):
   TESLA_AP2_MODELS = PlatformConfig(
     [CarDocs("Tesla AP2 Model S", "All")],
     TESLA_AP1_MODELS.specs,
-    TESLA_AP1_MODELS.dbc_dict
+    dbc_dict('tesla_powertrain', 'tesla_radar_continental_generated', chassis_dbc='tesla_can')
   )
   TESLA_MODELS_RAVEN = PlatformConfig(
     [CarDocs("Tesla Model S Raven", "All")],
